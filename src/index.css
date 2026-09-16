@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #0D0D0E;
+    color: #F4F4F6;
+  }
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #0D0D0E;
+    color: #F4F4F6;
+    overflow-x: hidden;
+  }
+}
+
+/* Lenis Smooth Scroll CSS */
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Typography Families */
+.font-serif-luxury {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans-luxury {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Accent Bronze & Red Color Family Utilities */
+.text-bronze {
+  color: #D4AF37;
+}
+
+.bg-bronze {
+  background-color: #D4AF37;
+}
+
+.border-bronze {
+  border-color: #D4AF37;
+}
+
+/* Red Color Family Accent (#E63946, #DC2626, #C8102E, #991B1B) */
+.text-crimson {
+  color: #E63946;
+}
+
+.bg-crimson {
+  background-color: #E63946;
+}
+
+.border-crimson {
+  border-color: #E63946;
+}
+
+/* Custom subtle dark scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0D0D0E;
+}
+::-webkit-scrollbar-thumb {
+  background: #26262B;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E63946;
+}
+
+/* Custom selection styling */
+::selection {
+  background-color: #E63946;
+  color: #FFFFFF;
+}
+
+/* Shutter Animation Utilities */
+@keyframes shutterPulse {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+.animate-shutter-pulse {
+  animation: shutterPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

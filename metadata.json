@@ -1,0 +1,7 @@
+{
+  "name": "Stitch Atelier",
+  "description": "Bespoke tailoring, haute couture craftsmanship, and artisanal textile atelier portfolio with interactive gallery and fitting booking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
